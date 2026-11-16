@@ -20,25 +20,25 @@
 <body>
 <div id="auth" hidden></div>
 <div id="app" hidden>
-  <aside class="side">
-    <div class="brand"><div class="brand-logo">A</div><div><div class="brand-name" id="brand-name">Agenda</div><div class="brand-sub">Agenda</div></div></div>
-    <nav class="nav" id="nav">
-      <a href="#agenda" data-r="agenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Agenda</span></a>
-      <a href="#pacientes" data-r="pacientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Pacientes</span></a>
-      <a href="#procedimentos" data-r="procedimentos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>Serviços e procedimentos</span></a>
-      <a href="#profissionais" data-r="profissionais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profissionais</span></a>
-      <a href="#usuarios" data-r="usuarios" data-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Usuários</span></a>
-      <a href="#configuracoes" data-r="configuracoes" data-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8"/></svg><span>Configurações</span></a>
-    </nav>
-    <div class="side-foot">
-      <div id="side-status"></div>
-      <div class="userbox"><b id="u-nome"></b><div class="r" id="u-papel"></div><button type="button" id="u-senha">Alterar minha senha</button><button type="button" id="u-sair">Sair</button></div>
-    </div>
-  </aside>
-  <main>
-    <div id="banner"></div>
-    <div id="view"><div class="loading"><div><div class="spin"></div>Carregando…</div></div></div>
-  </main>
+<aside class="side">
+<div class="brand"><div class="brand-logo">A</div><div><div class="brand-name" id="brand-name">Agenda</div><div class="brand-sub">Agenda</div></div></div>
+<nav class="nav" id="nav">
+<a href="#agenda" data-r="agenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Agenda</span></a>
+<a href="#pacientes" data-r="pacientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Pacientes</span></a>
+<a href="#procedimentos" data-r="procedimentos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>Serviços e procedimentos</span></a>
+<a href="#profissionais" data-r="profissionais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profissionais</span></a>
+<a href="#usuarios" data-r="usuarios" data-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Usuários</span></a>
+<a href="#configuracoes" data-r="configuracoes" data-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8"/></svg><span>Configurações</span></a>
+</nav>
+<div class="side-foot">
+<div id="side-status"></div>
+<div class="userbox"><b id="u-nome"></b><div class="r" id="u-papel"></div><button type="button" id="u-senha">Alterar minha senha</button><button type="button" id="u-sair">Sair</button></div>
+</div>
+</aside>
+<main>
+<div id="banner"></div>
+<div id="view"><div class="loading"><div><div class="spin"></div>Carregando…</div></div></div>
+</main>
 </div>
 <div id="modal-root"></div>
 <div id="toast"></div>
@@ -53,5 +53,6 @@
 <script src="app7.js"></script>
 <script src="app8.js"></script>
 <script src="app9.js"></script>
+<script src="app10.js"></script>
 </body>
 </html>
