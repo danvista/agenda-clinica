@@ -17,15 +17,15 @@
 .rx-logo-prev{width:220px;height:96px;border:1px dashed #cfd6df;border-radius:8px;display:grid;place-items:center;background:#fafbfc;overflow:hidden;color:var(--muted);font-size:13px;padding:6px}
 .rx-logo-prev img{max-width:100%;max-height:84px;object-fit:contain}
 @media (max-width:760px){
-  .rx-row{flex-wrap:wrap}
-  .rx-row .rx-med,.rx-row .rx-pos{flex-basis:100%}
-  .rx-row .rx-qtd,.rx-row .rx-via{width:100%}
-  .rx-hi{flex-direction:column;align-items:stretch;gap:8px}
-  .rx-acts .btn{flex:1}
+.rx-row{flex-wrap:wrap}
+.rx-row .rx-med,.rx-row .rx-pos{flex-basis:100%}
+.rx-row .rx-qtd,.rx-row .rx-via{width:100%}
+.rx-hi{flex-direction:column;align-items:stretch;gap:8px}
+.rx-acts .btn{flex:1}
 }
 /* Página impressa */
 #print-root{display:none}
-.rx-page{font-family:Inter,Arial,Helvetica,sans-serif;color:#111;font-size:12pt;line-height:1.35;display:flex;flex-direction:column;min-height:262mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.rx-page{font-family:Inter,Arial,Helvetica,sans-serif;color:#111;font-size:12pt;line-height:1.35;display:flex;flex-direction:column;min-height:296mm;box-sizing:border-box;padding:12mm 14mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .rx-cab{display:flex;align-items:center;gap:16px;border-bottom:2px solid #0e9f8e;padding-bottom:4mm}
 .rx-logo{max-height:22mm;max-width:62mm;object-fit:contain}
 .rx-cab-t{font-size:9.5pt;color:#333;line-height:1.45}
@@ -60,10 +60,10 @@
 .rx-page.ctrl .rx-ctrl-b{margin-top:5mm}
 .rx-page.ctrl .rx-ln{padding-top:2.2mm}
 @media print{
-  @page{size:A4 portrait;margin:12mm 14mm}
-  body.printing{background:#fff!important}
-  body.printing>*:not(#print-root){display:none!important}
-  body.printing #print-root{display:block!important}
-  .rx-page{break-after:page;page-break-after:always}
-  .rx-page:last-child{break-after:auto;page-break-after:auto}
+@page{size:A4 portrait;margin:0}
+body.printing{background:#fff!important}
+body.printing>*:not(#print-root){display:none!important}
+body.printing #print-root{display:block!important}
+.rx-page{break-after:page;page-break-after:always}
+.rx-page:last-child{break-after:auto;page-break-after:auto}
 }
