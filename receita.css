@@ -1,0 +1,69 @@
+/* Agenda Clínica — receitas */
+.rx-pac-box{background:var(--accent-soft);border:1px solid #cfe9e5;border-radius:8px;padding:10px 12px;margin-bottom:14px}
+.rx-it{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:8px;background:#fbfcfd}
+.rx-it-n{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;flex:none;margin-top:7px}
+.rx-it-f{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+.rx-row{display:flex;gap:8px}
+.rx-row .rx-med,.rx-row .rx-pos{flex:1;min-width:0}
+.rx-row .rx-qtd{width:190px;flex:none}
+.rx-row .rx-via{width:190px;flex:none}
+.rx-it .x{margin-top:2px}
+.rx-hi{align-items:center}
+.rx-hi-t{min-width:0}
+.rx-hi-t .muted{font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rx-acts{display:flex;gap:6px;flex:none}
+.rx-ctl{background:#fff3d6;color:#8a5300}
+.rx-logo-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.rx-logo-prev{width:220px;height:96px;border:1px dashed #cfd6df;border-radius:8px;display:grid;place-items:center;background:#fafbfc;overflow:hidden;color:var(--muted);font-size:13px;padding:6px}
+.rx-logo-prev img{max-width:100%;max-height:84px;object-fit:contain}
+@media (max-width:760px){
+  .rx-row{flex-wrap:wrap}
+  .rx-row .rx-med,.rx-row .rx-pos{flex-basis:100%}
+  .rx-row .rx-qtd,.rx-row .rx-via{width:100%}
+  .rx-hi{flex-direction:column;align-items:stretch;gap:8px}
+  .rx-acts .btn{flex:1}
+}
+/* Página impressa */
+#print-root{display:none}
+.rx-page{font-family:Inter,Arial,Helvetica,sans-serif;color:#111;font-size:12pt;line-height:1.35;display:flex;flex-direction:column;min-height:262mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.rx-cab{display:flex;align-items:center;gap:16px;border-bottom:2px solid #0e9f8e;padding-bottom:4mm}
+.rx-logo{max-height:22mm;max-width:62mm;object-fit:contain}
+.rx-cab-t{font-size:9.5pt;color:#333;line-height:1.45}
+.rx-clin{font-size:15pt;font-weight:700;color:#111}
+.rx-tit{font-size:14pt;text-align:center;margin:8mm 0 6mm;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.rx-tit span{display:block;font-size:9pt;color:#555;letter-spacing:.02em;font-weight:500;margin-top:1mm}
+.rx-box{border:1px solid #9aa3ad;border-radius:3px;padding:3mm 4mm;font-size:9.5pt;line-height:1.6;margin-bottom:5mm}
+.rx-box-t{font-weight:700;text-transform:uppercase;font-size:8pt;letter-spacing:.06em;margin-bottom:1mm}
+.rx-ln{border-bottom:1px solid #9aa3ad;padding-top:3mm;font-size:8.5pt;color:#555}
+.rx-small{font-size:8.5pt;color:#555;text-align:center}
+.rx-pac{margin-bottom:6mm;line-height:1.6}
+.rx-pac span{color:#555}
+.rx-pvia{font-weight:700;text-decoration:underline;margin:4mm 0 3mm}
+.rx-item{margin:0 0 5mm 3mm;break-inside:avoid}
+.rx-l1{display:flex;align-items:baseline;gap:2mm}
+.rx-num{font-weight:700}
+.rx-dots{flex:1;border-bottom:1px dotted #666;min-width:8mm}
+.rx-q{white-space:nowrap}
+.rx-ppos{margin:1.5mm 0 0 6mm;color:#222}
+.rx-obs{margin-top:5mm;font-size:11pt;line-height:1.5}
+.rx-fill{flex:1;min-height:8mm}
+.rx-ass{text-align:center;break-inside:avoid}
+.rx-local{text-align:right;margin-bottom:16mm}
+.rx-linha{border-top:1px solid #222;width:85mm;margin:0 auto 2mm}
+.rx-pr{font-size:10pt;line-height:1.45}
+.rx-ctrl-b{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:7mm}
+.rx-ctrl-b .rx-box{margin:0}
+.rx-page.ctrl .rx-tit{margin:5mm 0 4mm}
+.rx-page.ctrl .rx-box{margin-bottom:4mm;padding:2.5mm 4mm}
+.rx-page.ctrl .rx-pac{margin-bottom:4mm}
+.rx-page.ctrl .rx-local{margin-bottom:11mm}
+.rx-page.ctrl .rx-ctrl-b{margin-top:5mm}
+.rx-page.ctrl .rx-ln{padding-top:2.2mm}
+@media print{
+  @page{size:A4 portrait;margin:12mm 14mm}
+  body.printing{background:#fff!important}
+  body.printing>*:not(#print-root){display:none!important}
+  body.printing #print-root{display:block!important}
+  .rx-page{break-after:page;page-break-after:always}
+  .rx-page:last-child{break-after:auto;page-break-after:auto}
+}
